@@ -42,7 +42,7 @@
  - https://drive.google.com/file/d/1-Ug_Oa836-9wsX2v3MP825SBw6-_vIXA/view?usp=drive_link
 
 >> ## 🛠️ 使用技術
-- Python 3.x
+- Python 3.13.5
 - PyQt6
 - BeautifulSoup4
 - requests
