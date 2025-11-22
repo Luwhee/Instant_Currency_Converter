@@ -128,7 +128,7 @@ grid.addWidget(result, 5, 0,1,4)
 
 def dollar():
     match dollar_sel0.currentText():
-        case "需要外幣現鈔>>現金匯率":
+        case "需要外幣現鈔":
             if dollar_sel1.currentText()== '南非幣(ZAR)' or dollar_sel1.currentText()== '瑞典幣(SEK)':
                 result.setText(f'此幣別似乎沒有提供直接兌換外幣現鈔服務')
             elif dollar_sel2.currentText()== '南非幣(ZAR)' or dollar_sel2.currentText()== '瑞典幣(SEK)':
@@ -137,7 +137,7 @@ def dollar():
                 result.setText(f'幣別相同無須匯率換算，還是{dollar_sel1.currentText()}{dollar_input.text()}')
             else:
                 result.setText(f'換算匯率為{rates02[dollar_sel2.currentText()]/rates01[dollar_sel1.currentText()]:.3f}\n{dollar_sel1.currentText()}{dollar_input.text()}約為{dollar_sel2.currentText()}{float(dollar_input.text())*rates01[dollar_sel1.currentText()]/rates02[dollar_sel2.currentText()]:.2f}')
-        case "帳戶間的換匯>>即期匯率)":
+        case "帳戶間的換匯":
             if dollar_sel1.currentText()== '菲國比索(PHP)' or dollar_sel1.currentText()== '印尼幣(IDR)' or dollar_sel1.currentText()== '韓元(KRW)' or dollar_sel1.currentText()== '越南盾(VND)' or dollar_sel1.currentText()== '馬來幣(MYR)':
                 result.setText(f'此幣別似乎沒有提供帳戶間的換匯服務')
             elif dollar_sel2.currentText()== '菲國比索(PHP)' or  dollar_sel1.currentText()== '印尼幣(IDR)' or dollar_sel1.currentText()== '韓元(KRW)' or dollar_sel1.currentText()== '越南盾(VND)' or dollar_sel1.currentText()== '馬來幣(MYR)':
