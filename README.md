@@ -67,7 +67,7 @@
 ---
  ## 🔗成品下載
 👉 Google Drive 成品下載連結：
- - https://drive.google.com/file/d/1-Ug_Oa836-9wsX2v3MP825SBw6-_vIXA/view?usp=drive_link
+ - https://drive.google.com/file/d/1XWdSikJcepCDWjb4gm7rZehsPIgwtj61/view?usp=drive_link
 
 ## 🛠️ 使用技術
 - Python 3.13.5
